@@ -1,7 +1,9 @@
 nav {
     color: #FBFBFD;
-    height: 70px;
+	height: 70px;
+	position: fixed;
 }
+
 
 .navbar .navbar-nav {
     display: inline-block;
@@ -129,169 +131,188 @@ p {
 }
 
 .body {
-			overflow-x: "hidden";
-		}
+	overflow-x: "hidden";
+}
 
-		.MCCHeaderBg {
-			width: 100%;
-		}
+.MCCHeaderBg {
+	width: 100%;
+}
 
-		.MCCHeaderDiv {
-			position: absolute;
-			top: 0px;
-			height: 640px;
-			width: 100%;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
-		}
+.MCCHeaderDiv {
+	position: absolute;
+	top: 0px;
+	height: 640px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
 
-		.MCCHeaderTitle {
-			height: 184px;
-			width: 573px;
-			left: 30.14%;
-			right: 30.07%;
-			font-family: 'Roboto', sans-serif;
-			font-style: italic;
-			font-size: 60px;
-			line-height: 84px;
-			text-align: center;
-		}
+.MCCHeaderTitle {
+	height: 184px;
+	width: 573px;
+	left: 30.14%;
+	right: 30.07%;
+	font-family: 'Roboto', sans-serif;
+	font-style: italic;
+	font-size: 60px;
+	line-height: 84px;
+	text-align: center;
+}
 
-		.MCCHeaderInnerTextDiv {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-		}
+.MCCHeaderInnerTextDiv {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 
-		.MCCHeaderAboutDiv {
-			width: 533px;
-			margin-top: 19px;
-			margin-bottom: 28px;
-			font-family: 'Roboto', sans-serif;
-			font-style: normal;
-			font-size: 18px;
-			text-align: center;
-			opacity: 0.6;
-			color: #16171B;
-		}
+.MCCHeaderAboutDiv {
+	width: 533px;
+	margin-top: 19px;
+	margin-bottom: 28px;
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-size: 18px;
+	text-align: center;
+	opacity: 0.6;
+	color: #16171B;
+}
 
-		.btnFixedWidth {
-			width: "fit-content";
-		}
+.btnFixedWidth {
+	width: "fit-content";
+}
 
-		.teamPhotoSetDiv {
-			width: 100%;
-			margin: 0px;
-		}
+.teamPhotoSetDiv {
+	width: 100%;
+	margin: 0px;
+}
 
-		.teamPhotoRect {
-			width: 100%;
-			height: 288px;
-			background: #16171B;
-			position: relative;
-			display: flex;
-			flex-direction: column;
-			min-width: 0;
-			background-clip: border-box;
-		}
+.teamPhotoRect {
+	width: 100%;
+	height: 288px;
+	background: #16171B;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	min-width: 0;
+	background-clip: border-box;
+}
 
-		.teamPhoto {
-			width: 100%;
-			height: 100%;
-			opacity: 0.5;
-		}
+.teamPhoto {
+	width: 100%;
+	height: 100%;
+	opacity: 0.5;
+}
 
-		.teamPhotoText {
-			width: 180px;
-			font-family: 'Roboto', sans-serif;
-			font-size: 24px;
-			color: #FFFFFF;
-			position: relative;
-			top: -25px;
-			left: 150px;
-		}
+.teamPhotoText {
+	width: 180px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 24px;
+	color: #FFFFFF;
+	position: relative;
+	top: -25px;
+	left: 150px;
+}
 
-		footer {
-			width: 180px;
-			margin-bottom: 7px;
-			text-align: right;
-			margin-right: 10px;
-			position: absolute;
-			bottom: 0px;
-			right: 0px;
-			color: #ffffff;
-		}
+footer {
+	width: 180px;
+	margin-bottom: 7px;
+	text-align: right;
+	margin-right: 10px;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	color: #ffffff;
+}
 
-		footer span {
-			font-size: 24px;
-			font-style: normal;
-		}
+footer span {
+	font-size: 24px;
+	font-style: normal;
+}
 
-		.btnMCCBlue {
-			background-color: #0048CC;
-		}
+.btnMCCBlue {
+	background-color: #0048CC;
+}
 
-		.ourTeamTitle {
-			width: 540px;
-			height: 44px;
-			margin-left: 160px;
-			margin-bottom: 23px;
-			font-style: normal;
-			font-size: 36px;
-			color: #000000;
-		}
+.ourTeamTitle {
+	width: 540px;
+	height: 44px;
+	margin-left: 160px;
+	margin-bottom: 23px;
+	font-style: normal;
+	font-size: 36px;
+	color: #000000;
+}
 
-		.customFAQButton {
-			padding-left: 0px;
-			color: black;
-			text-decoration: none;
-			font-family: 'Roboto';
-			font-size: 18px;
-			width: 100%;
-			height: 100%;
-			background-color: transparent;
-			font-family: 'Roboto', sans-serif;
-		}
+.customFAQButton {
+	padding-left: 0px;
+	color: black;
+	text-decoration: none;
+	font-family: 'Roboto';
+	font-size: 18px;
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+	font-family: 'Roboto', sans-serif;
+}
 
-		.customFAQButton:hover {
-			color: #000000;
-		}
+.customFAQButton:hover {
+	color: #000000;
+}
 
-		.customFAQButton:active, .customFAQButton:focus {
-			box-shadow: none;
-		}
+.customFAQButton:active, .customFAQButton:focus {
+	box-shadow: none;
+}
 
-		.customArrow {
-			float: right;
-		}
+.customArrow {
+	float: right;
+}
 
-		.customFAQLink {
-			float: left;
-		}
+.customFAQLink {
+	float: left;
+}
 
-		.customFAQAccordion {
-			width: 1110px;
-			margin: 0 auto;
-		}
+.customFAQAccordion {
+	width: 1110px;
+	margin: 0 auto;
+}
 
-		.customFAQCard {
-			border: 0px;
-		}
+.customFAQCard {
+	border: 0px;
+}
 
-		.customFAQCardHeader {
-			padding-left: 0px;
-			background-color: transparent;
-		}
+.customFAQCardHeader {
+	padding-left: 0px;
+	background-color: transparent;
+}
 
-		.customFAQAccordionHeader {
-			margin-left: 160px;
-			margin-top: 77px;
-			margin-bottom: 37px;
-			width: 540px;
-			height: 44px;
-			font-family: 'Roboto', sans-serif;
-			font-style: normal;
-			font-size: 36px;
-		}
+.customFAQAccordionHeader {
+	margin-left: 160px;
+	margin-top: 77px;
+	margin-bottom: 37px;
+	width: 540px;
+	height: 44px;
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-size: 36px;
+}
+
+#footer {
+	margin-top: 5%;
+	bottom: 0;
+	clear: both;
+	position:relative;
+	height: 100px;
+	width: 100%;
+}
+
+.social-icon {
+	width: 16px;
+	height: 16px;
+	margin-right: 10px;
+}
+
+.footer-link {
+	margin-right: 10px;
+}
