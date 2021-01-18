@@ -316,3 +316,33 @@ footer span {
 .footer-link {
 	margin-right: 10px;
 }
+
+.AboutHeader {
+	position: absolute;
+	top: 25%;
+	height: 640px;
+	width: 32%;
+	margin-left: 16%;
+}
+
+.AboutTitle h1 {
+	text-align: left;
+	font-weight: bold;
+	margin-left: 0;
+}
+
+.AboutSocial {
+	float: left;
+}
+
+.AboutSocial-left {
+	margin-right: 200px;
+}
+
+.AboutSocial h4 {
+	font-weight: bold;
+}
+
+.AboutSocial p {
+	color: gray;
+}
