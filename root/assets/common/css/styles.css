@@ -346,3 +346,184 @@ footer span {
 .AboutSocial p {
 	color: gray;
 }
+
+.calendar-bg {
+	background-image: url("/Users/mac/Downloads/Sheridan-Mobile-Computing-Club-Website-main/root/assets/common/img/calendarbackground.png");
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.calendar {
+	width: 1092px;
+}
+
+.calendarMonth {
+	padding-top: 120px;
+	margin-bottom: 24px;
+	font-family: Inter;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	text-transform: uppercase;
+	color: #333333;
+}
+
+.calendarBox {
+	padding: 0px;
+	width: 1092px;
+	height: 678px;
+}
+
+.calendarWeekdayBox {
+	height: 25px;
+}
+
+.calendarWeekday {
+	font-family: Inter;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	display: flex;
+	align-items: center;
+	text-transform: uppercase;
+	color: #333333;
+}
+
+.calendarDayBox {
+	position: relative;
+	height: 130px;
+	border: 1px solid #E0E0E0;
+}
+
+.calendarDay {
+	padding-top: 5px;
+	font-family: Inter;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	color: #333333;
+}
+
+.fa-chevron-left {
+	margin-top: 40px;
+	margin-bottom: 80px;
+	color: #0048CC;
+}
+
+.fa-chevron-right {
+	margin-top: 40px;
+	margin-bottom: 80px;
+	margin-left: 70px;
+	color: #0048CC;
+}
+
+.pastEvent {
+	background: #FFFFFF;
+	border-top: 3px solid rgba(22,23,27, 0.4);
+	border-left: 3px solid rgba(22,23,27, 0.4);
+}
+
+.eventDiv {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding: 10px;
+}
+
+.eventFormat {
+	text-align: right;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	color: #000000;
+}
+
+.eventName {
+	text-align: right;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	color: #16171B;
+	opacity: 0.7;
+}
+
+.todayBox {
+	background: #FFD146;
+	border: 1px solid #E0E0E0;
+}
+
+.activeEvent {
+	background: #FFFFFF;
+	border-top: 3px solid rgba(0,72,204);
+	border-left: 3px solid rgba(0,72,204);
+}
+
+.activeEvent .eventName {
+	color: #0048CC;
+	opacity: 1;
+}
+
+.eventSection {
+	height: 840px;
+	background: #F2F6F9;
+}
+
+.eventSectionEvent {
+	padding: 90px 165px !important;
+}
+
+.eventSectionEventName {
+	font-family: Inter;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	color: #000000;
+}
+
+.eventInfo {
+	padding-top: 50px;
+}
+
+.eventImg {
+	max-width: 484px;
+	max-height: 454px;
+}
+
+.eventDateLocation {
+	padding-top: 24px;
+}
+
+.eventDateLocationRow {
+	height: 34px;
+}
+
+.eventDateLocationTitle {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	color: #000000
+}
+
+.eventTime {
+	height: 34px;
+	float: right;
+}
+
+.joinEventBtnDiv {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.joinEventBtn {
+	width: fit-content;
+	background-color: #0048CC !important;
+    color: white !important;
+}
+
+
