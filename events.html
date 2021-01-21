@@ -1,39 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="root/assets/common/css/styles.css">
-    <link href="./root/assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="./root/assets/lib/bootstrap/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-    <script src="./root/assets/common/js/script.js"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
-    <title>Mobile Computing Club Website</title>
-  </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-inverse navbar-fixed-top navbar-expand-md">
-          <div class="container nav-fixed">
-            <a href="./index.html" class="navbar-brand d-flex">
-              <img src="./root/assets/common/img/mcc-logo.png" width="130" height="40">
-            </a>
-            <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2"><ul class="navbar-nav mr-auto"></ul> </div>
-            <div class="navbar-collapse collapse w-50 order-3 dual-collapse">
-              <ul id="nav-ul" class="navbar-nav d-flex ml-auto">
-                <li class="nav-item nav-li py-2">
-                  <a class="nav-link-a font-roboto" href="events.html">Events</a>
-                </li>
-                <li class="nav-item nav-li py-2">
-                  <a class="nav-link-a font-roboto" href="about.html">About Us</a>
-                </li>
-                <li class="nav-item nav-li">
-                  <button class="nav-button">
-                    <a class="nav-link-a font-roboto" href="#">Join Slack Channel</a>
-                  </button>
-                </li>
-            </ul>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="root/assets/common/css/styles.css">
+  <link href="./root/assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./root/assets/lib/bootstrap/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+  <script src="./root/assets/common/js/script.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <title>Mobile Computing Club Website</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-inverse navbar-fixed-top navbar-expand-md">
+      <div class="container nav-fixed">
+        <a href="./index.html" class="navbar-brand d-flex">
+          <img src="./root/assets/common/img/mcc-logo.png" width="130" height="40">
+        </a>
+        <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2"><ul class="navbar-nav mr-auto"></ul> </div>
+        <div class="navbar-collapse collapse w-50 order-3 dual-collapse">
+          <ul id="nav-ul" class="navbar-nav d-flex ml-auto">
+            <li class="nav-item nav-li py-2">
+              <a class="nav-link-a font-roboto" href="events.html">Events</a>
+            </li>
+            <li class="nav-item nav-li py-2">
+              <a class="nav-link-a font-roboto" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item nav-li">
+              <button class="nav-button">
+                <a class="nav-link-a font-roboto" href="#">Join Slack Channel</a>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="container-fluid px-0">
+    <div class="calendar-bg">
+      <div class="calendar">
+        <div class="calendarMonth">NOVEMBER 2020</div>
+        <div class="calendarBox">
+          <div class="container-fluid">
+            <div class="calendarWeekdayBox row">
+              <div class="col calendarWeekday">S</div>
+              <div class="col calendarWeekday">M</div>
+              <div class="col calendarWeekday">T</div>
+              <div class="col calendarWeekday">W</div>
+              <div class="col calendarWeekday">T</div>
+              <div class="col calendarWeekday">F</div>
+              <div class="col calendarWeekday">S</div>
             </div>
-           </div>
-      </nav>
-    </header>
+            <div class="row">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col calendarDayBox">
+                    <div class="calendarDay">01</div>
+                  </div>
+                  <div class="col calendarDayBox">
+                    <div class="calendarDay">02</div>
+                  </div>
+                  <div class="col calendarDayBox pastEvent">
+                    <div class="calendarDay">03</div>
+                    <div class="eventDiv">
+                      <div class="eventFormat">Online ZOOM</div>
+                      <div class="eventName">Coffee Chat</div>
+                    </div>
+                  </div>
+                  <div class="col calendarDayBox">
+                    <div class="calendarDay">04</div>
+                  </div>
+                  <div class="col calendarDayBox">
+                    <div class="calendarDay">05</div>
+                  </div>
+                  <div class="col calendarDayBox">
+                    <div class="calendarDay">06</div>
+                  </div>
+                  <div class="col calendarDayBox">
+                    <div class="calendarDay">07</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col calendarDayBox">
+                    <div class="calendarDay">08</div>
+                  </div>
+                  <div class="col calendarDayBox">
+                    <div class="calendarDay">09</div>
+                  </div>
+                  <div class="col calendarDayBox">
+                    <div class="calendarDay">09</div>
+                  </div>
+                  <div class="col calendarDayBox">
+                    <div class="calendarDay">10</div>
+                  </div>
+                  <div class="col calendarDayBox">
+                    <div class="calendarDay">11</div>
+                  </div>
+                  <div class="col calendarDayBox todayBox">
+                    <div class="calendarDay">12</div>
+                    <div class="eventDiv">
+                      <div class="eventFormat">Online ZOOM</div>
+                      <div class="eventName">Skillshare Session</div>
+                    </div>
+                  </div>
+                  <div class="col calendarDayBox">
+                    <div class="calendarDay">13</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col calendarDayBox">
+                    <div class="calendarDay">14</div>
+                  </div>
+                  <div class="col calendarDayBox activeEvent">
+                    <div class="calendarDay">15</div>
+                    <div class="eventDiv">
+                      <div class="eventFormat">Online ZOOM</div>
+                      <div class="eventName">Skillshare Session</div>
+                    </div>
+                  </div>
+                  <div class="col calendarDayBox">
+                    <div class="calendarDay">16</div>
+                  </div>
+                  <div class="col calendarDayBox">
+                    <div class="calendarDay">17</div>
+                  </div>
+                  <div class="col calendarDayBox">
+                    <div class="calendarDay">18</div>
+                  </div>
+                  <div class="col calendarDayBox">
+                    <div class="calendarDay">19</div>
+                  </div>
+                  <div class="col calendarDayBox">
+                    <div class="calendarDay">20</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col calendarDayBox">
+                    <div class="calendarDay">21</div>
+                  </div>
+                  <div class="col calendarDayBox">
+                    <div class="calendarDay">22</div>
+                  </div>
+                  <div class="col calendarDayBox">
+                    <div class="calendarDay">23</div>
+                  </div>
+                  <div class="col calendarDayBox activeEvent">
+                    <div class="calendarDay">24</div>
+                    <div class="eventDiv">
+                      <div class="eventFormat">Online ZOOM</div>
+                      <div class="eventName">Skillshare Session</div>
+                    </div>
+                  </div>
+                  <div class="col calendarDayBox">
+                    <div class="calendarDay">25</div>
+                  </div>
+                  <div class="col calendarDayBox">
+                    <div class="calendarDay">26</div>
+                  </div>
+                  <div class="col calendarDayBox">
+                    <div class="calendarDay">26</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col calendarDayBox">
+                    <div class="calendarDay">27</div>
+                  </div>
+                  <div class="col calendarDayBox">
+                    <div class="calendarDay">28</div>
+                  </div>
+                  <div class="col calendarDayBox">
+                    <div class="calendarDay">29</div>
+                  </div>
+                  <div class="col calendarDayBox">
+                    <div class="calendarDay">30</div>
+                  </div>
+                  <div class="col calendarDayBox">
+                    <div class="calendarDay"></div>
+                  </div>
+                  <div class="col calendarDayBox">
+                    <div class="calendarDay"></div>
+                  </div>
+                  <div class="col calendarDayBox">
+                    <div class="calendarDay"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <i class="fas fa-chevron-left"></i>
+        </div>
+        <div class="col">
+          <i class="fas fa-chevron-right"></i>
+        </div>
+      </div>
+    </div>
+    <div class="eventSection">
+      <div class="container-fluid eventSectionEvent">
+        <div class="row eventSectionEventName">Skillshare Session: Acing the Technical Interview</div>
+        <div class="row eventInfo">
+          <div class="col px-0">
+            <img class="eventImg" src="/Users/mac/Downloads/Sheridan-Mobile-Computing-Club-Website-main/root/assets/common/img/Oct 15, Skillshare Session_ Technical Interview Tips.png" />
+          </div>
+          <div class="col px-0">
+            <p>Peter does CO-OP Interviews for IBM’s Interactive Experience (iX) Mobile team and is here to share what they look for in interviews. We’ll talk about topics ranging from selling yourself to being wrong. As well as any topics of interest people bring! <br><br>Some things to expect:<br>* Basic Interview tips<br>* Why it’s okay to get questions wrong<br>* Asking questions is more important than answering them<br>* Example questions<br>* It’s okay to brag<br>* Q&A</p>
+          </div>
+        </div>
+        <div class="row eventDateLocation">
+          <div class="col px-0">
+            <div class="container-fluid px-0">
+              <div class="row eventDateLocationRow">
+                <div class="col eventDateLocationTitle">Date</div>
+                <div class="col eventDateLocationTitle">Location</div>
+              </div>
+              <div class="row eventDateLocationRow">
+                <div class="col">November 12 <span class="eventTime">13:00 - 15:00 pm</span></div>
+                <div class="col">Online ZOOM link</div>
+              </div>
+            </div>
+          </div>
+          <div class="col px-0 joinEventBtnDiv">
+            <button class="btn joinEventBtn">Join Event</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
