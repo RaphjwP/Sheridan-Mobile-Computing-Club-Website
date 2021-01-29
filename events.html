@@ -1,39 +1,358 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="root/assets/common/css/styles.css">
-    <link href="./root/assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="./root/assets/lib/bootstrap/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-    <script src="./root/assets/common/js/script.js"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@1,300&display=swap" rel="stylesheet">
-    <title>Mobile Computing Club Website</title>
-  </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-inverse navbar-fixed-top navbar-expand-md">
-          <div class="container nav-fixed">
-            <a href="./index.html" class="navbar-brand d-flex">
-              <img src="./root/assets/common/img/mcc-logo.png" width="130" height="40">
-            </a>
-            <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2"><ul class="navbar-nav mr-auto"></ul> </div>
-            <div class="navbar-collapse collapse w-50 order-3 dual-collapse">
-              <ul id="nav-ul" class="navbar-nav d-flex ml-auto">
-                <li class="nav-item nav-li py-2">
-                  <a class="nav-link-a font-roboto" href="events.html">Events</a>
-                </li>
-                <li class="nav-item nav-li py-2">
-                  <a class="nav-link-a font-roboto" href="about.html">About Us</a>
-                </li>
-                <li class="nav-item nav-li">
-                  <button class="nav-button">
-                    <a class="nav-link-a font-roboto" href="#">Join Slack Channel</a>
-                  </button>
-                </li>
-            </ul>
-            </div>
-           </div>
-      </nav>
-    </header>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="root/assets/common/css/styles.css">
+	<link href="./root/assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="./root/assets/lib/bootstrap/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+	<script src="./root/assets/common/js/script.js"></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<title>Mobile Computing Club Website</title>
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-inverse navbar-fixed-top navbar-expand-md">
+			<div class="container nav-fixed">
+				<a href="./index.html" class="navbar-brand d-flex">
+					<img src="./root/assets/common/img/mcc-logo.png" width="130" height="40">
+				</a>
+				<div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2"><ul class="navbar-nav mr-auto"></ul> </div>
+				<div class="navbar-collapse collapse w-50 order-3 dual-collapse">
+					<ul id="nav-ul" class="navbar-nav d-flex ml-auto">
+						<li class="nav-item nav-li py-2">
+							<a class="nav-link-a font-roboto" href="events.html">Events</a>
+						</li>
+						<li class="nav-item nav-li py-2">
+							<a class="nav-link-a font-roboto" href="about.html">About Us</a>
+						</li>
+						<li class="nav-item nav-li">
+							<button class="nav-button">
+								<a class="nav-link-a font-roboto" href="#">Join Slack Channel</a>
+							</button>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<div class="container-fluid px-0">
+		<div class="calendar-bg">
+			<div class="calendar">
+				<div class="calendarMonth"></div>
+				<div class="calendarBox">
+					<div class="container-fluid">
+						<div class="calendarWeekdayBox row">
+							<div class="col calendarWeekday">S</div>
+							<div class="col calendarWeekday">M</div>
+							<div class="col calendarWeekday">T</div>
+							<div class="col calendarWeekday">W</div>
+							<div class="col calendarWeekday">T</div>
+							<div class="col calendarWeekday">F</div>
+							<div class="col calendarWeekday">S</div>
+						</div>
+						<div class="row">
+							<div id="calendar" class="container-fluid">
+								<div class="row">
+									<div class="col calendarDayBox">
+										<div class="calendarDay"></div>
+									</div>
+									<div class="col calendarDayBox">
+										<div class="calendarDay"></div>
+									</div>
+									<!-- pastEvent class -->
+									<div class="col calendarDayBox">
+										<div class="calendarDay"></div>
+										<!--<div class="eventDiv">
+											<div class="eventFormat">Online ZOOM</div>
+											<div class="eventName">Coffee Chat</div>
+										</div>-->
+									</div>
+									<div class="col calendarDayBox">
+										<div class="calendarDay"></div>
+									</div>
+									<div class="col calendarDayBox">
+										<div class="calendarDay"></div>
+									</div>
+									<div class="col calendarDayBox">
+										<div class="calendarDay"></div>
+									</div>
+									<div class="col calendarDayBox">
+										<div class="calendarDay"></div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col calendarDayBox">
+										<div class="calendarDay"></div>
+									</div>
+									<div class="col calendarDayBox">
+										<div class="calendarDay"></div>
+									</div>
+									<div class="col calendarDayBox">
+										<div class="calendarDay"></div>
+									</div>
+									<div class="col calendarDayBox">
+										<div class="calendarDay"></div>
+									</div>
+									<div class="col calendarDayBox">
+										<div class="calendarDay"></div>
+									</div>
+									<div class="col calendarDayBox">
+										<div class="calendarDay"></div>
+										<!--<div class="eventDiv">
+											<div class="eventFormat">Online ZOOM</div>
+											<div class="eventName">Skillshare Session</div>
+										</div>-->
+									</div>
+									<div class="col calendarDayBox">
+										<div class="calendarDay"></div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col calendarDayBox">
+										<div class="calendarDay"></div>
+									</div>
+									<div class="col calendarDayBox">
+										<div class="calendarDay"></div>
+										<!--<div class="eventDiv">
+											<div class="eventFormat">Online ZOOM</div>
+											<div class="eventName">Skillshare Session</div>
+										</div>-->
+									</div>
+									<div class="col calendarDayBox">
+										<div class="calendarDay"></div>
+									</div>
+									<div class="col calendarDayBox">
+										<div class="calendarDay"></div>
+									</div>
+									<div class="col calendarDayBox">
+										<div class="calendarDay"></div>
+									</div>
+									<div class="col calendarDayBox">
+										<div class="calendarDay"></div>
+									</div>
+									<div class="col calendarDayBox">
+										<div class="calendarDay"></div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col calendarDayBox">
+										<div class="calendarDay"></div>
+									</div>
+									<div class="col calendarDayBox">
+										<div class="calendarDay"></div>
+									</div>
+									<div class="col calendarDayBox">
+										<div class="calendarDay"></div>
+									</div>
+									<!-- activeEvent class -->
+									<div class="col calendarDayBox">
+										<div class="calendarDay"></div>
+										<!--<div class="eventDiv">
+											<div class="eventFormat">Online ZOOM</div>
+											<div class="eventName">Skillshare Session</div>
+										</div>-->
+									</div>
+									<div class="col calendarDayBox">
+										<div class="calendarDay"></div>
+									</div>
+									<div class="col calendarDayBox">
+										<div class="calendarDay"></div>
+									</div>
+									<div class="col calendarDayBox">
+										<div class="calendarDay"></div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col calendarDayBox">
+										<div class="calendarDay"></div>
+									</div>
+									<div class="col calendarDayBox">
+										<div class="calendarDay"></div>
+									</div>
+									<div class="col calendarDayBox">
+										<div class="calendarDay"></div>
+									</div>
+									<div class="col calendarDayBox">
+										<div class="calendarDay"></div>
+									</div>
+									<div class="col calendarDayBox">
+										<div class="calendarDay"></div>
+									</div>
+									<div class="col calendarDayBox">
+										<div class="calendarDay"></div>
+									</div>
+									<div class="col calendarDayBox">
+										<div class="calendarDay"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<i id="leftArrow" class="fas fa-chevron-left"></i>
+				</div>
+				<div class="col">
+					<i id="rightArrow" class="fas fa-chevron-right"></i>
+				</div>
+			</div>
+		</div>
+		<div class="eventSection">
+			<div class="container-fluid eventSectionEvent">
+				<div class="row eventSectionEventName">Skillshare Session: Acing the Technical Interview</div>
+				<div class="row eventInfo">
+					<div class="col px-0">
+						<img class="eventImg" src="/Users/mac/Downloads/Sheridan-Mobile-Computing-Club-Website-main/root/assets/common/img/Oct 15, Skillshare Session_ Technical Interview Tips.png" />
+					</div>
+					<div class="col px-0">
+						<p>Peter does CO-OP Interviews for IBM’s Interactive Experience (iX) Mobile team and is here to share what they look for in interviews. We’ll talk about topics ranging from selling yourself to being wrong. As well as any topics of interest people bring! <br><br>Some things to expect:<br>* Basic Interview tips<br>* Why it’s okay to get questions wrong<br>* Asking questions is more important than answering them<br>* Example questions<br>* It’s okay to brag<br>* Q&A</p>
+					</div>
+				</div>
+				<div class="row eventDateLocation">
+					<div class="col px-0">
+						<div class="container-fluid px-0">
+							<div class="row eventDateLocationRow">
+								<div class="col eventDateLocationTitle">Date</div>
+								<div class="col eventDateLocationTitle">Location</div>
+							</div>
+							<div class="row eventDateLocationRow">
+								<div class="col">November 12 <span class="eventTime">13:00 - 15:00 pm</span></div>
+								<div class="col">Online ZOOM link</div>
+							</div>
+						</div>
+					</div>
+					<div class="col px-0 joinEventBtnDiv">
+						<button class="btn joinEventBtn">Join Event</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer id="footer" class=" text-center text-lg-start">
+	<!-- Grid container -->
+	<div class="container p-4">
+	  <!--Grid row-->
+	  <div class="row">
+		<!--Grid column-->
+		<div class="col">
+		  <a href="#" class="nav-link-a font-roboto footer-link">About MCC</a>
+		  <a href="#" class="nav-link-a font-roboto footer-link">Events</a>
+		</div>
+		<div class="col">
+		  <img src="./root/assets/common/img/mcc-logo.png" width="130" height="40">
+		</div>
+		<div class="col">
+			<a href="#"><img src="./root/assets/common/img/Icon/Social/icon-facebook.png" class="social-icon"></a>
+			<a href="#"><img src="./root/assets/common/img/Icon/Social/icon-linkedin.png" class="social-icon"></a>
+			<a href="https://twitter.com/mcc_sheridan"><img src="./root/assets/common/img/Icon/Social/icon-twitter.png" class="social-icon"></a>
+			<a href="#"><img src="./root/assets/common/img/Icon/Social/icon-youtube.png" class="social-icon"></a>
+			<a href="https://www.instagram.com/mcc_sheridan/?hl=en"><img src="./root/assets/common/img/Icon/Social/icon-instagram.png" class="social-icon"></a>
+
+		</div>
+		<!--Grid column-->
+	  </div>
+	  <!--Grid row-->
+	</div>
+	<div class="text-center p-3" style="background-color: #B0B8BC">
+	  © 2021 Copyright:
+	  <a class="text-white" href="">Mobile Computing Club at Sheridan College</a>
+	</div>
+	<!-- Copyright -->
+  </footer>
+</body>
+<script>
+
+	var date = new Date();
+
+	function renderCalendar(){
+
+		date.setDate(1);
+
+		var today = new Date();
+
+		var lastDay = new Date(
+			date.getFullYear(),
+			date.getMonth() + 1,
+			0
+			).getDate();
+
+		var prevLastDay = new Date(
+			date.getFullYear(),
+			date.getMonth(),
+			0
+			).getDate();
+
+		var firstDayIndex = date.getDay();
+
+		var lastDayIndex = new Date(
+			date.getFullYear(),
+			date.getMonth() + 1,
+			0
+			).getDay();
+
+		var nextDays = 7 - lastDayIndex - 1;
+
+		var dayCount = 1;
+
+		var months = [
+		"January",
+		"February",
+		"March",
+		"April",
+		"May",
+		"June",
+		"July",
+		"August",
+		"September",
+		"October",
+		"November",
+		"December",
+		];
+
+		let days = "";
+
+		$('.calendarMonth').text(months[date.getMonth()] + " " + date.getFullYear());
+
+		var lastMonthDays = $('.calendarDay').slice(0, firstDayIndex);
+		if (lastMonthDays.count != 0) {
+			$(lastMonthDays).each(function(index) {
+				$(this).text("");
+			}); 
+		}
+
+		var monthDays = $('.calendarDay').slice(firstDayIndex, lastDay);
+		$(monthDays).each(function(index){
+			if (today.getMonth() == date.getMonth() && today.getDate() == dayCount) {
+				$(this).parent().addClass("todayBox");
+			}
+
+			if (dayCount <= lastDay) {
+				$(this).text(dayCount);
+				dayCount++;
+			}
+		});
+	}
+
+	renderCalendar();
+
+	$('#leftArrow').on('click', function() {
+		date.setMonth(date.getMonth() - 1);
+		renderCalendar();
+	});
+
+	$('#rightArrow').on('click', function() {
+		date.setMonth(date.getMonth() + 1);
+		renderCalendar();
+	});
+
+</script>
+
+</html>
+
