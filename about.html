@@ -8,8 +8,9 @@
     <link href="./root/assets/lib/bootstrap/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
     <script src="./root/assets/common/js/script.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
     <title>Mobile Computing Club Website</title>
+    <link rel="icon" type="image/png" href="./root/assets/common/img/Icon/favicon/favicon.ico"/>
   </head>
   <body>
     <header>
@@ -64,6 +65,136 @@
             </div>
 		</div>
     </div>
+
+    <div class="container-fluid px-0">
+        <img class="MCCHeaderBg" src="./root/assets/common/img/About us background.png"/>
+        <div class="AboutUsHeader">
+            About Us
+        </div>
+        <div class="AboutUsCards">
+            <div class="row" style="width: 80%;">
+              <div class="col-sm">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="./root/assets/common/img/Illustration 1.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Mobile Computing Community</h5>
+                      <p class="card-text">We are tech enthusiasts, developers, engineers, and people with an interest in Mobile Computing</p>
+                    </div>
+                </div>
+              </div>
+              <div class="col-sm">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="./root/assets/common/img/Illustration 2.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Sheridan College Community</h5>
+                      <p class="card-text">Students with a broad range of backgrounds, interests, and talents in the Sheridan Community. </p>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-sm">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="./root/assets/common/img/Illustration 3.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Alumni Network </h5>
+                      <p class="card-text">We have industry connections with our vast alumni that work in fields like banking, tech, and research.</p>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-sm">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="./root/assets/common/img/Illustration 4.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Anyone is welcome to join us!</h5>
+                      <p class="card-text">Our events are open to anyone, feel free to join us remotely on Microsoft Video Meetings!</p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          </div>
+    </div>
     
+    <div>
+      <div class="contact-header">
+        Contact Us
+      </div>
+      <div class="wrapper">
+        <div class="row">
+          <div class="col-md contact-us">
+            <div class="form-container">
+              <form class="form-contact">
+                <div class="row">
+                  <div class="form-group col-xl">
+                    <input type="firstname" class="form-control" id="inputFirstName" placeholder="First Name">
+                  </div>
+                  <div class="form-group col-xl ">
+                    <input class="form-last form-control" type="lastname" class="form-control" id="inputLastName" placeholder="Last Name">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" id="inputEmail" placeholder="Email Address">
+                </div>
+                <div class="form-group">
+                  <input class="form-message form-control" type="message" class="form-control" id="inputMessage" placeholder="Your Message">
+                </div>
+                <button type="submit" class="btn-send" onclick="sendMail(); return false">Send</button>
+              </form>
+            </div>
+            </div>
+            
+          <div class="col-md contact-info">
+            <div>
+              <div class="contact-details">
+                <img class="contact-icons" src="./root/assets/common/img/location.png"> Currently remotely
+              </div>
+              <div class="contact-details">
+                <img class="contact-icons" src="./root/assets/common/img/phone.png">MCC Phone Number
+              </div>
+              <div class="contact-details">
+                <img class="contact-icons" src="./root/assets/common/img/envelope.png">MCC Email Address
+              </div>
+
+            </div>
+            <div class="mapouter"><div class="gmap_canvas"><iframe width="450" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=1430%20Trafalgar%20Rd,%20Oakville,%20ON%20L6H%202L1&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://embedgooglemap.net/maps/10"></a><br><style>.mapouter{position:relative;text-align:right;height:200px;width:450px;}</style><a href="https://www.embedgooglemap.net">full width google map</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:200px;width:450px;}</style></div></div>  
+          </div>
+
+        </div>
+      </div>
+      
+    </div>
+
+    <footer id="footer" class="default-footer text-center text-lg-start">
+      <!-- Grid container -->
+      <div class="container footer-container">
+        <!--Grid row-->
+        <div class="row">
+        <!--Grid column-->
+        <div class="col">
+          <a href="#" class="nav-link-a font-roboto footer-link">About MCC</a>
+          <a href="#" class="nav-link-a font-roboto footer-link">Events</a>
+        </div>
+        <div class="col">
+          <img src="./root/assets/common/img/mcc-logo.png" width="130" height="40">
+        </div>
+        <div class="col">
+          <a href="#"><img src="./root/assets/common/img/Icon/Social/icon-facebook.png" class="social-icon"></a>
+          <a href="#"><img src="./root/assets/common/img/Icon/Social/icon-linkedin.png" class="social-icon"></a>
+          <a href="https://twitter.com/mcc_sheridan"><img src="./root/assets/common/img/Icon/Social/icon-twitter.png" class="social-icon"></a>
+          <a href="#"><img src="./root/assets/common/img/Icon/Social/icon-youtube.png" class="social-icon"></a>
+          <a href="https://www.instagram.com/mcc_sheridan/?hl=en"><img src="./root/assets/common/img/Icon/Social/icon-instagram.png" class="social-icon"></a>
+    
+        </div>
+        <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <div class="text-center p-3" style="background-color: white; color: black;">
+        © 2021 Copyright:
+        <a class="text-black" href="">Mobile Computing Club at Sheridan College</a>
+      </div>
+      <!-- Copyright -->
+      </footer>
+
+    <script src="./root/assets/common/js/script.js"></script>
     </body>
     </html>

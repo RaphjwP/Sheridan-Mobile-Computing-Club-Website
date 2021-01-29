@@ -63,7 +63,8 @@ li {
 
 .left-event-container {
     float: left;
-    width: 13%;
+	width: 15%;
+	padding: 10px;
 }
 
 .right-event-container {
@@ -140,12 +141,11 @@ p {
 
 .MCCHeaderDiv {
 	position: absolute;
-	top: 0px;
+	top: 10%;
 	height: 640px;
-	width: 100%;
+	width: 62%;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 	justify-content: center;
 }
 
@@ -153,18 +153,21 @@ p {
 	height: 184px;
 	width: 573px;
 	left: 30.14%;
-	right: 30.07%;
-	font-family: 'Roboto', sans-serif;
-	font-style: italic;
+	right: 30.07%; 
 	font-size: 60px;
 	line-height: 84px;
-	text-align: center;
+	text-align: left;
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+	color: #37426C;
+
 }
 
 .MCCHeaderInnerTextDiv {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: left;
+	margin-left: 25%;
 }
 
 .MCCHeaderAboutDiv {
@@ -174,18 +177,23 @@ p {
 	font-family: 'Roboto', sans-serif;
 	font-style: normal;
 	font-size: 18px;
-	text-align: center;
+	text-align: left;
 	opacity: 0.6;
 	color: #16171B;
 }
 
 .btnFixedWidth {
-	width: "fit-content";
+	width: 120px;
+	border-radius: 2px;
 }
 
 .teamPhotoSetDiv {
-	width: 100%;
-	margin: 0px;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 30px;
 }
 
 .teamPhotoRect {
@@ -304,7 +312,9 @@ footer span {
 	clear: both;
 	position:relative;
 	height: 100px;
-	width: 100%;
+	width: 80%;
+	margin-left: 15%;
+	margin-right: 15%;
 }
 
 .social-icon {
@@ -345,4 +355,215 @@ footer span {
 
 .AboutSocial p {
 	color: gray;
+}
+
+.AboutUsHeader {
+	position: absolute;
+	width: 100%;
+	margin-left: 0;
+	top: 110%;
+	text-align: center;
+	font-size: 42px;
+	font-weight: 500;
+}
+
+.event-header {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.AboutUsCards {
+	position: absolute;
+	width: 100%;
+	top: 140%;
+	margin-left: 12%;
+}
+
+.card-body h5 {
+	left: 7.22%;
+	right: 6.84%;
+	top: 45.26%;
+	bottom: 34.31%;
+
+	font-family: Lato;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 28px;
+	/* or 140% */
+
+	display: flex;
+	align-items: center;
+	text-align: center;
+
+	color: #37426C;
+}
+
+.card-body .card-text {
+	left: 6.08%;
+	right: 5.7%;
+	top: 68.98%;
+	bottom: 9.12%;
+	font-family: Lato;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 20px;
+	text-align: center;
+	color: #4F4F4F;
+}
+
+.card .card-img-top {
+	width: 80%;
+	margin-left: 15%
+}
+
+.card {
+	background: #FFFFFF;
+	border-radius: 8px;
+	padding: 10px;
+	height: 320px;
+	margin-right: -10%;
+}
+
+.row {
+	width: 100%;
+}
+
+.contact-us {
+	width: 100%;
+}
+
+.contact-info {
+	width: 100%;
+}
+
+.form-control {
+	width: 100%;
+}
+
+.form-container {
+	width: 90%;
+	padding: 20px;
+}
+
+.wrapper {
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.form-last {
+	margin-right: 0;
+}
+
+.form-group {
+	margin-bottom: 15px;
+}
+
+.form-message {
+	height: 200px;
+	resize: none;
+}
+
+.contact-header{
+	font-family: Lato;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	line-height: 18px;
+	display: flex;
+	align-items: center;
+	margin: 10% 10% 20px 11%;
+	color: #000000;
+}
+
+.btn-send {
+	width: 100%;
+	background-color: #0048CC;
+	color: white;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 21px;
+	align-items: center;
+	text-align: center;
+	height: 50px;
+	border-radius: 4px;
+	border: 2px solid #0048CC;
+}
+
+.contact-info {
+	font-family: Roboto;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 26px;
+	letter-spacing: 0px;
+	text-align: left;
+	padding: 20px;
+	color: #16171B;
+}
+
+.contact-details {
+	margin: 15px;
+	margin-left: 0px;
+}
+
+.contact-icons {
+	margin-right: 16px;
+}
+
+.contact-info {
+	margin-left: 10%;
+}
+
+.footer-container {
+	margin-left: 30%;
+	width: 80%;
+}
+
+.card-img-round {
+	height: 222px;
+	width: 222px;
+	border-radius: 50%;
+}
+
+.member-col {
+	column-width: 300px;
+}
+
+.card-member p {
+	text-align: center;
+}
+
+.card-member .card-title {
+	font-family: Inter;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 28px;
+	line-height: 34px;
+}
+
+.card-member {
+	background: #FFFFFF;
+	border-radius: 3px;
+	padding: 15px 35px 15px 35px;
+	height: 403px;
+	margin-right: -10%;
+	border: 1px solid #C4C4C4;
+	width: 261px;
+}
+
+.card-member .card-text {
+	font-family: Inter;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.member-social-media-icon {
+	text-align: center;
 }
